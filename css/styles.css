@@ -1,0 +1,159 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-color: #f9f9f9;
+}
+
+/* --- Header & Navigation --- */
+.header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #3498db;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #3498db;
+}
+
+/* --- Main Layout --- */
+.main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    min-height: 80vh;
+}
+
+/* --- Table Styling (About Page) --- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Essential Box Model property for tables */
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Pseudo-class: Zebra Striping */
+table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* --- Form Styling (Contact Page) --- */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: #fff;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Attribute Selectors for Inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+/* Checkbox specific layout */
+input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* --- Project Grid (Projects Page) --- */
+/* Combination Selector: Selecting divs that represent projects */
+.project1, .project2, .project3 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project1:hover, .project2:hover, .project3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project1 img, .project2 img, .project3 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}

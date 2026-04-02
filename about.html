@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>About Me</h1>
-    </div>
-    
-    <div>
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="background">
         <h2>My Background</h2>
         <p>I have been working in web development for several years.</p>
-        
+        </section>
+
+        <section class="skills">
         <h3>Skills</h3>
-        <!-- Table should be here but is missing -->
-        <p>HTML, CSS, JavaScript</p>
-    </div>
-    
+
+        <!-- Data Table added -->
+         <table>
+            <tr>
+                <th>Skill</th>
+                <th>Education</th>
+                <th>Experience</th>
+            </tr>
+            <tr>
+                <td>HTML, CSS, JavaScript</td>
+                <td>Umuzi</td>
+                <td> 1 year</td>
+
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Tshwane University of Technology</td>
+                <td>3 years</td>
+            </tr>
+            <tr>
+                <td>Database Management</td>
+                <td>Rosebank College</td>
+                <td>2 years</td>
+            </tr>
+         </table>
+        </section>
+        
+           <!-- Profile Section  -->
+
+    <section id="profile">
+        
     <div>
         <h3>My Photo</h3>
-        <img src="images/profile.jpg">
+        <img src="images/profile.png" alt="Profile Photo">
     </div>
-    
+    </section>
     <div class="footer">
         <p>Contact me at email@example.com</p>
     </div>
+     </main>
 </body>
 </html>
