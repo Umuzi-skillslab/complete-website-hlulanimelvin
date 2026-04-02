@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="header">
+    <header class="header">
         <h1>Contact Me</h1>
-    </div>
-    
-    <div>
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
         <h2>Get In Touch</h2>
-        
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
+
+        <form action="#" method="post">
+            <!-- Labels  -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Email" required>
+            <label for="telephone">Phone:</label>
+            <input type="tel" id="telephone" placeholder="012 345 6789" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+            <label for="subscription">Newsletter Subscription:</label>
+            <input type="checkbox" id="subscription">
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message" minlength="10" maxlength="500" required></textarea>
+
+
+            <button type="submit">Send</button>
         </form>
-    </div>
-    
+    </main>
+
     <div class="footer">
         <p>Contact me at email@example.com</p>
     </div>
 </body>
+
 </html>
